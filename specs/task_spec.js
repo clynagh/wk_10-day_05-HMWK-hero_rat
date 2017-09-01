@@ -6,7 +6,7 @@ describe("Task", function(){
   var rescue;
 
   beforeEach( function(){
-    rescue = new Task("Rescue", "High", "Urgent", "Gold");
+    rescue = new Task("Rescue", "High", "Urgent", 15);
   })
 
   it("does task have a name", function(){
@@ -22,6 +22,10 @@ describe("Task", function(){
   })
 
   it("does task have a reward level", function(){
-    assert.strictEqual(rescue.reward, "Gold")
+    assert.strictEqual(rescue.reward, 15)
+  })
+
+  it("the task has not been completed", function(){
+    assert.strictEqual(rescue.completed, false)
   })
 })
