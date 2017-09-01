@@ -7,10 +7,11 @@ Hero = function(name, food){
 
 }
 
-
-
-
-
+Hero.prototype.sayOwnName = function(){
+  var talk = "";
+  talk += this.name + " is on the case!";
+  return talk;
+}
 
 
 module.exports = Hero;

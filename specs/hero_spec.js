@@ -26,6 +26,10 @@ it("Does hero have an emplty array of tasks on create", function(){
   assert.strictEqual(chase.tasks.length, 0)
 })
 
+it("hero can say own name", function(){
+  assert.strictEqual(chase.sayOwnName(), "Chase is on the case!")
+})
+
 
 
 })
