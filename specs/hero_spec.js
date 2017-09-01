@@ -19,6 +19,14 @@ it("Does hero have a favourite food", function(){
   assert.strictEqual(chase.food, "Cheese")
 })
 
+it("Does hero have zero health on create", function(){
+  assert.strictEqual(chase.health, 0)
+})
+
+it("Does hero have an emplty array of tasks on create", function(){
+  assert.strictEqual(chase.tasks.length, 0)
+})
+
 })
 
 
