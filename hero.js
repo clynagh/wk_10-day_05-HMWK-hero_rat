@@ -3,6 +3,7 @@ Hero = function(name, food){
   this.health = 0;
   this.food = food;
   this.tasks = [];
+  this.completedTasks = [];
 
 
 }
