@@ -27,8 +27,16 @@ Hero.prototype.eatFood = function(food) {
   this.health = health;
 }
 
+Hero.prototype.sortByTasks = function(){
+  sortTasks = this.tasks
+  return sortTasks.sort(function(a,b){
+    return a.reward - b.reward;
+  })
+}
+
 
 module.exports = Hero;
+
 
 
 

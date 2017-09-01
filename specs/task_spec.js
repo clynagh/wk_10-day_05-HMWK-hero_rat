@@ -10,7 +10,7 @@ describe("Task", function(){
   })
 
   it("does task have a name", function(){
-    assert.strictEqual(rescue.task, "Rescue")
+    assert.strictEqual(rescue.name, "Rescue")
   })
 
   it("does task have a difficulty level", function(){
