@@ -1,12 +1,15 @@
 var assert = require("assert")
 var Hero = require("../hero.js")
+var Task = require("../task.js")
 
 describe("Hero", function(){
 
 var chase;
+var rescue;
 
 beforeEach( function(){
 chase = new Hero("Chase", "Cheese");
+rescue = new Task("Rescue", "High", "Urgent", 15);
 
 })
 
@@ -30,9 +33,15 @@ it("hero can say own name", function(){
   assert.strictEqual(chase.sayOwnName(), "Chase is on the case!")
 })
 
+it("hero can add a task to his tasks array", function(){
+  chase.addNewTask(rescue);
+  assert.strictEqual(chase.tasks.length, 1);
+})
+
 
 
 })
+
 
 
 

@@ -13,5 +13,10 @@ Hero.prototype.sayOwnName = function(){
   return talk;
 }
 
+Hero.prototype.addNewTask = function(task){
+  this.tasks.push(task);
+}
+
 
 module.exports = Hero;
+
